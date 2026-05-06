@@ -1,14 +1,5 @@
-interface Day {
-  date: Date;
-  day: number;
-  currentMonth: boolean;
-}
-
-interface CalendarData {
-  year: number;
-  month: number;
-  days: Day[];
-}
+import type Day from "../types/Day";
+import type CalendarData from "../types/CalendarData";
 
 export default class DatePickerEngine {
   private currentDate: Date;
