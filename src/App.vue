@@ -1,7 +1,11 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+import DatePicker from './components/DatePicker.vue';
 </script>
 
 <template>
-  <HelloWorld />
+  <div class="p-4">
+
+    <DatePicker />
+  </div>
+  
 </template>
