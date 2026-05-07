@@ -10,7 +10,16 @@ defineEmits(['next', 'prev', 'select', 'close'])
 </script>
 
 <template>
-  <div class="absolute mt-2 bg-white border rounded shadow p-4 w-full">
+  <div
+    class="
+      absolute mt-2 w-full
+      bg-(--dp-bg)
+      border border-(--dp-border)
+      rounded-(--dp-radius-md)
+      shadow-(--dp-shadow)
+      p-4
+    "
+  >
     
     <CalendarHeader
       :month="calendar.month"

@@ -13,13 +13,33 @@ const months = [
 </script>
 
 <template>
-  <div class="flex justify-between items-center my-2">
-    <button @click="$emit('prev')" class="px-2">←</button>
+  <div class="flex justify-between items-center my-2 text-(--dp-text)">
+    
+    <button
+      @click="$emit('prev')"
+      class="
+        px-2
+        text-(--dp-primary)
+        hover:text-(--dp-primary-hover)
+      "
+    >
+      ←
+    </button>
 
-    <span class="font-semibold text-gray-600">
+    <span class="font-semibold text-(--dp-muted)">
       {{ months[month] }} {{ year }}
     </span>
 
-    <button @click="$emit('next')" class="px-2">→</button>
+    <button
+      @click="$emit('next')"
+      class="
+        px-2
+        text-(--dp-primary)
+        hover:text-(--dp-primary-hover)
+      "
+    >
+      →
+    </button>
+
   </div>
 </template>

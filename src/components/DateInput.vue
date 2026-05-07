@@ -13,7 +13,16 @@ function format(date: Date | null) {
 
 <template>
   <input
-    class="w-full border px-3 py-2 rounded-lg  cursor-pointer"
+    class="
+      w-full
+      border
+      px-3 py-2
+      rounded-(--dp-radius-md)
+      cursor-pointer
+      bg-(--dp-bg)
+      text-(--dp-text)
+      border-(--dp-border)
+    "
     :value="format(value)"
     readonly
     @click="$emit('click')"

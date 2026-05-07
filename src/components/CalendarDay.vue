@@ -13,9 +13,15 @@ defineEmits(['click'])
 <template>
   <button
     @click="$emit('click')"
-    class="p-2 text-sm rounded hover:bg-blue-100"
+    class="
+      p-2 text-sm rounded-(--dp-radius-sm)
+      transition
+    "
     :class="[
-      day.currentMonth ? 'text-black' : 'text-gray-500'
+      day.currentMonth
+        ? 'text-(--dp-text)'
+        : 'text-(--dp-muted)',
+      'hover:bg-(--dp-hover)'
     ]"
   >
     {{ day.day }}
